@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <title>PBTS Academy Student Information Sheet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Concert+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: rgb(240,164,69);
+            background: linear-gradient(90deg, rgba(240,164,69,1) 0%, rgba(255,200,113,1) 50%, rgba(255,175,130,1) 100%);
+            font-family: "Chakra Petch", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px;
+        }
+        .form-label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .form-text {
+            font-size: 0.875rem;
+            color: #6c757d;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .container {
+            width: 700px;
+        }
+        fieldset {
+            border: none;
+        }  
+        textarea {
+            resize: none;
+        }
+        legend {
+            font-family: "Concert One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 35px;
+        }
+        .intro-section {
+            position: relative;
+            background-image: url('pbts.png');
+            background-size: cover;
+            background-position: center;
+            height: 580px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 50px;
+            margin-bottom: 30px;
+            color: white;
+        }
+        .intro-section h1 {
+            font-size: 90px;
+            font-weight: bold;
+            border-radius: 8px;
+            text-align: left;
+            color: black;
+            text-shadow: 1px 1px white;
+        }
+        .intro-section p {
+            font-size: 24px;
+            border-radius: 8px;
+            text-align: left;
+            text-shadow: 1px 1px black;
+        }
+        .title {
+            font-family: "Concert One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            text-align: center; 
+        }
+        .title h1 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+        .nav-item a {
+            font-size: 18px;
+            color: white;
+            font-weight: bold;
+        }
+        .nav-item a:hover {
+            text-decoration: underline;
+            color: orange;
+        }
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.993);
+        }
+        .intro-section .cta-button {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 20px;
+            background-color: #ec9f19;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-shadow: 1px 1px black;
+            width: 200px;
+            text-decoration: none;
+        }
+        .intro-section .cta-button:hover {
+            text-decoration: underline;
+            background-color: #f3b448;;
+        }
+        .gotop{
+            position: fixed;
+            right: 70px;
+            bottom: 5px;
+        }
+        .gotop a{
+            opacity: 0.8;
+        }
+        .gotop a:hover{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-dark navbar">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="logo.png" alt="" width="60px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#student">Student Information</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#parent">Parent Information</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#emergency">Emergency Information</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#medical">Medical Information</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#other">Other Information</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Introductory Section -->
+<div class="intro-section">
+    <h1>Welcome to <br><span style="color: rgb(236, 160, 19); text-shadow: 2px 2px black;">PBTS Academy</span></h1>
+    <p>Providing quality education and shaping future leaders.</p>
+    <a class="cta-button" href="#form">Fill-up Form</a>
+</div>
+
+
+    <div class="container">
+        <div class="form-container">
+            
+            <div class="title" id="form">
+                <h1>PBTS Academy Information Sheet</h1>
+                <p>Binangonan, Rizal</p>
+            </div>
+            <form>
+                <!-- STUDENT INFORMATION-->
+                <fieldset class="p-4">
+                    <legend class="fw-bold" id="student">Student Information</legend>
+                    
+                    <div class="form-group row align-items-center">
+                        <label for="firstName" class="col-md-3 col-form-label form-label">Name <span style="color: red;">*</span></label> 
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" id="firstName">
+                            <small class="form-text">First Name</small>
+                        </div>
+                        <div class="col-md-2">
+                            <input type="text" class="form-control" id="middleInitial" maxlength="1">
+                            <small class="form-text">M.I</small>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" class="form-control" id="lastName">
+                            <small class="form-text">Last Name</small>
+                        </div>
+
+                    </div>
+                    
+                    <div class="form-group row align-items-center">
+                        <label for="gender" class="col-md-3 col-form-label form-label">Gender & Age <span style="color: red;">*</span></label>
+                        <div class="col-md-4">
+                            <select class="form-select" id="child" required>
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Others">Others</option>
+                                <option value="Prefer">Prefer not to say</option>
+
+                            </select>
+                            <small class="form-text">Select Gender</small>
+                        </div>
+
+                        <div class="col-md-4">
+                            <input type="number" class="form-control" id="age" min="1">
+                            <small class="form-text">Age</small>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group row align-items-center">
+                        <label for="birthDate" class="col-md-3 col-form-label form-label">Birth Date <span style="color: red;">*</span></label>
+                        <div class="col-md-8">
+                            <input type="date" class="form-control" id="birthDate" placeholder="MM-DD-YYYY">
+                            <small class="form-text">Date</small>
+                        </div>
+                    </div>
+
+                    <div class="form-group row align-items-center">
+                        <label for="address" class="col-md-3 col-form-label form-label">Address <span style="color: red;">*</span></label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control mb-2" id="streetAddress1">
+                            <small class="form-text">Address</small>
+                        </div>
+                    </div>
+
+                    <div class="form-group row align-items-center">
+                        <label for="address" class="col-md-3 col-form-label form-label">Religion <span style="color: red;">*</span></label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control mb-2" id="religion">
+                            <small class="form-text">Religion</small>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- PARENTS INFORMATION-->
+                <fieldset class="p-4">
+                    <legend class="fw-bold" id="parent">Parent Information</legend>
+                    <div class="form-group row align-items-center">
+                        <label for="motherName" class="col-md-3 col-form-label form-label">Mother's Information <span style="color: red;">*</span></label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="motherFirstName">
+                            <small class="form-text">First Name</small>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="motherLastName">
+                            <small class="form-text">Last Name</small>
+                        </div>
+                    </div>
+
+                    <div class="form-group row align-items-center">
+                        <label for="mothersworkPlace" class="col-md-3 col-form-label form-label"> </label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="mothersworkPlace">
+                            <small class="form-text">Mother's Workplace</small>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="tel" class="form-control" id="phoneNumber1" size="11" placeholder="09XXXXXXXXX">
+                            <small class="form-text">Contact Number</small>
+                        </div>
+                    </div>
+
+                    <div class="form-group row align-items-center">
+                        <label for="fatherName" class="col-md-3 col-form-label form-label">Father's Information <span style="color: red;">*</span></label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="fatherFirstName">
+                            <small class="form-text">First Name</small>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="fatherLastName">
+                            <small class="form-text">Last Name</small>
+                        </div>
+                    </div>
+
+                    <div class="form-group row align-items-center">
+                        <label for="fathersworkPlace" class="col-md-3 col-form-label form-label"> </label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="fathersworkPlace">
+                            <small class="form-text">Father's Workplace</small>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="tel" class="form-control" id="phoneNumber" size="11" placeholder="09XXXXXXXXX">
+                            <small class="form-text">Contact Number</small>
+                        </div>
+                    </div>
+
+                    <div class="form-group row align-items-center">
+                        <label for="child" class="col-md-3 col-form-label form-label">Does your child have a device? <span style="color: red;">*</span></label>
+                        <div class="col-md-4">
+                            <select class="form-select" id="child" required>
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="deviceType" class="form-label fw-bold"></label>
+                            <input type="text" class="form-control" id="deviceType" placeholder="Enter device type" required>
+                            <small class="form-text">If yes, what kind of device?</small>
+                        </div>
+                    </div>
+                </fieldset>
+                
+                <!-- EMERGENCY INFORMATION-->
+                <fieldset class="p-4">
+                    <legend class="fw-bold" id="emergency">Emergency Information</legend>
+                    <p>In the event of an emergency, please contact:</p>
+                    <div class="form-group row align-items-center">
+                        <label for="guardianName" class="col-md-3 col-form-label form-label">Guardian's Information <span style="color: red;">*</span></label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="guardianFirstName">
+                            <small class="form-text">First Name</small>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="guardianLastName">
+                            <small class="form-text">Last Name</small>
+                        </div>
+                    </div>
+
+                    <div class="form-group row align-items-center">
+                        <label for="guardianEmail" class="col-md-3 col-form-label form-label"> </label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="guardianEmail">
+                            <small class="form-text">Guardian's Email</small>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="tel" class="form-control" id="guardianContact" size="11" placeholder="09XXXXXXXXX">
+                            <small class="form-text">Contact Number</small>
+                        </div>
+                    </div>
+
+                    <div class="form-group row align-items-center">
+                        <label for="relationship" class="col-md-3 col-form-label form-label">Relationship to Student <span style="color: red;">*</span></label>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="relationship">
+                            <small class="form-text">e.g., Mother, Father, Aunt, Uncle</small>
+                        </div>
+                    </div>
+
+                    <div class="form-group row align-items-center">
+                        <label for="fathersworkPlace" class="col-md-3 col-form-label form-label"> </label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="emergencyContact">
+                            <small class="form-text">Emergency Contact Name</small>
+                        </div>
+                        <div class="col-md-4">
+                            <input type="tel" class="form-control" id="emergencyPhone">
+                            <small class="form-text">Emergency Contact Number</small>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- MEDICAL INFORMATION-->
+                <fieldset class="p-4">
+                    <legend class="fw-bold" id="medical">Medical Information</legend>
+                    <div class="form-group row align-items-center">
+                        <label for="medicalIssues" class="col-md-3 col-form-label form-label">Medical Issues / Allergies <span style="color: red;">*</span></label>
+                        <div class="col-md-8">
+                            <textarea class="form-control" id="medicalIssues" rows="3"></textarea>
+                            <small class="form-text">Please list any medical issues or allergies</small>
+                        </div>
+                    </div>
+
+                    <div class="form-group row align-items-center">
+                        <label for="medications" class="col-md-3 col-form-label form-label">Medications <span style="color: red;">*</span></label>
+                        <div class="col-md-8">
+                            <textarea class="form-control" id="medications" rows="2"></textarea>
+                            <small class="form-text">Please list any medications the child is taking</small>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- OTHER INFORMATION-->
+                <fieldset class="p-4">
+                    <legend class="fw-bold" id="other">Other Information</legend>
+                    <div class="form-group row align-items-center">
+                        <label for="internetIssues" class="col-md-3 col-form-label form-label">Any issues with Internet? <span style="color: red;">*</span></label>
+                        <div class="col-md-8">
+                            <textarea class="form-control" id="internetIssues" rows="3"></textarea>
+                            <small class="form-text">Please list any issues with the internet</small>
+                        </div>
+                    </div>
+
+                    <div class="form-group row align-items-center">
+                        <label for="medications" class="col-md-3 col-form-label form-label">Academic Challenges <span style="color: red;">*</span></label>
+                        <div class="col-md-8">
+                            <textarea class="form-control" id="medications" rows="2"></textarea>
+                            <small class="form-text">Take down the challenges that you have been encountered in academics</small>
+                        </div>
+                    </div>
+
+                    <div class="form-group row align-items-center">
+                        <label for="relatives" class="col-md-3 col-form-label form-label">Relatives who attend same school <span style="color: red;">*</span></label>
+                        <div class="col-md-4">
+                            <input type="text" class="form-control" id="relatives">
+                            <small class="form-text">Name of the Relative</small>
+                        </div>
+                        <div class="col-md-4">
+                            <select class="form-select" id="child" required>
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <small class="form-text">Grade Level</small>
+                        </div>
+                    </div>
+
+                    <div class="form-group row align-items-center">
+                        <label for="Date" class="col-md-3 col-form-label form-label">Date <span style="color: red;">*</span></label>
+                        <div class="col-md-8">
+                            <input type="date" class="form-control" id="Date" placeholder="MM-DD-YYYY">
+                            <small class="form-text">Date</small>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-success">Submit</button>
+                    <button type="clear" class="btn btn-outline-secondary">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="gotop">
+            <a href="#top">
+              <img src="top.png" alt="Go to top" width="75px">
+            </a>
+          </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
